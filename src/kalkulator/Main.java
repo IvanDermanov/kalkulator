@@ -11,14 +11,12 @@ public class Main {
 		// komanda ide u formatu komanda 
 		do {
 			komanda=scr.nextLine();
-			if (komanda.isEmpty()) {
-				continue;
-			}
 			String[] kom=komanda.split(" ");
-			if (kom.length!=3) {
+			if (kom.length!=3||komanda.isEmpty()) {
 				continue;
 			}
 		}while (!komanda.equals("End"));
+		scr.close();
 	}
 
 }
