@@ -8,9 +8,14 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner scr = new Scanner(System.in);
 		String komanda="";
+		// komanda ide u formatu komanda 
 		do {
 			komanda=scr.nextLine();
 			if (komanda.isEmpty()) {
+				continue;
+			}
+			String[] kom=komanda.split(" ");
+			if (kom.length!=3) {
 				continue;
 			}
 		}while (!komanda.equals("End"));
