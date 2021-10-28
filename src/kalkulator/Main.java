@@ -19,8 +19,8 @@ public class Main {
 			int y=Integer.parseInt(kom[2]);
 			int z=0;
 			switch (kom[1]) {
-			case "+":
-				z=x+y;
+			case "-":
+				z=sub(x,y);
 				break;
 
 			default:
@@ -32,6 +32,11 @@ public class Main {
 			
 		}while (!komanda.equals("End"));
 		scr.close();
+	}
+
+	private static int sub(int x, int y) {
+		
+		return x - y;
 	}
 
 }
